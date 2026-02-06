@@ -39,6 +39,34 @@ body {
     transform: scale(1.1);
 }
 
+/* Lore Section */
+.lore-section {
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+    padding: 40px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    border: 2px solid #00CED1;
+}
+
+.lore-section h1 {
+    color: #00CED1;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.lore-content p {
+    color: #00CED1;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.lore-content p:last-child {
+    margin-bottom: 0;
+}
+
 /* Gallery Section */
 .gallery {
     display: grid;
@@ -135,6 +163,19 @@ body {
     
     .hero-image {
         max-width: 100%;
+    }
+    
+    .lore-section {
+        padding: 25px;
+        margin-bottom: 40px;
+    }
+    
+    .lore-section h1 {
+        font-size: 22px;
+    }
+    
+    .lore-content p {
+        font-size: 15px;
     }
 }
 
