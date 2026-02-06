@@ -114,8 +114,17 @@ body {
     max-width: 200px;
     margin: 0 auto 15px auto;
     border-radius: 4px;
-    flex-grow: 1;
     object-fit: contain;
+}
+
+.mascot-bio {
+    color: #00CED1;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+    padding: 0 10px;
+    text-align: center;
+    flex-grow: 1;
 }
 
 .mascot-footer {
@@ -212,6 +221,10 @@ body {
     
     .lore-content p {
         font-size: 15px;
+    }
+    
+    .mascot-bio {
+        font-size: 13px;
     }
 }
 
