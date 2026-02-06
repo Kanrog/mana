@@ -52,8 +52,27 @@ body {
 .lore-section h1 {
     color: #00CED1;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 28px;
+}
+
+.lore-toggle {
+    display: none;
+    width: 100%;
+    padding: 12px 24px;
+    margin-bottom: 20px;
+    background-color: #FF8C00;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lore-toggle:hover {
+    background-color: #FFA500;
 }
 
 .lore-content p {
@@ -65,6 +84,10 @@ body {
 
 .lore-content p:last-child {
     margin-bottom: 0;
+}
+
+.lore-content.collapsed {
+    display: none;
 }
 
 /* Gallery Section */
@@ -172,6 +195,19 @@ body {
     
     .lore-section h1 {
         font-size: 22px;
+        margin-bottom: 15px;
+    }
+    
+    .lore-toggle {
+        display: block;
+    }
+    
+    .lore-content {
+        display: none;
+    }
+    
+    .lore-content.expanded {
+        display: block;
     }
     
     .lore-content p {

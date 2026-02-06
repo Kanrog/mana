@@ -8,6 +8,20 @@ function downloadImage(filename) {
     document.body.removeChild(link);
 }
 
+// Function to toggle lore section on mobile
+function toggleLore() {
+    const loreContent = document.getElementById('lore-content');
+    const toggleButton = document.querySelector('.lore-toggle');
+    
+    if (loreContent.classList.contains('expanded')) {
+        loreContent.classList.remove('expanded');
+        toggleButton.textContent = 'Les mer';
+    } else {
+        loreContent.classList.add('expanded');
+        toggleButton.textContent = 'Skjul';
+    }
+}
+
 // Function to download all images as a zip
 async function downloadAll() {
     // List of all image files
@@ -75,7 +89,7 @@ async function downloadAll() {
         // Download zip
         const link = document.createElement('a');
         link.href = URL.createObjectURL(content);
-        link.download = 'Familien Mana.zip';
+        link.download = 'mascots.zip';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
