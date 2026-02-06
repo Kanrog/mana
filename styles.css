@@ -108,6 +108,14 @@ body {
     height: 100%;
 }
 
+.mascot-name {
+    color: #00CED1;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+
 .mascot-item img {
     width: 100%;
     height: auto;
@@ -131,19 +139,6 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: auto;
-}
-
-.mascot-footer input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #000000;
-    color: #00CED1;
-    border: 1px solid #00CED1;
-    border-radius: 4px;
-    text-align: center;
-    font-size: 16px;
-    cursor: default;
 }
 
 .mascot-footer button {
@@ -225,6 +220,10 @@ body {
     
     .mascot-bio {
         font-size: 13px;
+    }
+    
+    .mascot-name {
+        font-size: 18px;
     }
 }
 
