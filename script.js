@@ -89,7 +89,7 @@ async function downloadAll() {
         // Download zip
         const link = document.createElement('a');
         link.href = URL.createObjectURL(content);
-        link.download = 'mascots.zip';
+        link.download = 'Familien_Mana.zip';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
